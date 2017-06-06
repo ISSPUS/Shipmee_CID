@@ -87,6 +87,9 @@ gzip_vary on;
 # https://www.owasp.org/index.php/List_of_useful_HTTP_headers
 add_header X-XSS-Protection "1; mode=block";
 
+# IPs denegadas
+deny 185.26.92.74;
+
 {{ end }}
 
 {{ $enable_ipv6 := eq (or ($.Env.ENABLE_IPV6) "") "true" }}
