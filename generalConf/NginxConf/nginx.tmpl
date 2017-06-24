@@ -71,7 +71,7 @@ proxy_set_header X-Forwarded-Port $proxy_x_forwarded_port;
 proxy_set_header Proxy "";
 
 # Permitir subir fotos grandes
-client_max_body_size 10m;
+client_max_body_size 100m;
 
 # don't send the nginx version number in error pages and Server header
 server_tokens off;
