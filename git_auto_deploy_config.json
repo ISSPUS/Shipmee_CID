@@ -55,6 +55,20 @@
     "header-filter": {
         "X-GitHub-Event": "push"
      }
+    },    {
+      "url": "https://github.com/Shipmee/Shipmee.git",
+      "branch": "bdConnection",
+      "remote": "origin",
+      "path": "/home/core/Shipmee_CID_Workspace/repositories/Shipmee-bdConnection",
+      "deploy": "echo deploying && bash /home/core/Shipmee_CID/bdConnection-conf/continuousDeploy.sh",
+      "filters": [
+        {
+          "ref": "refs/heads/bdConnection"
+        }
+       ],
+    "header-filter": {
+        "X-GitHub-Event": "push"
+     }
     }
   ]
 }
