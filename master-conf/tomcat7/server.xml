@@ -76,6 +76,7 @@ http://www.apache.org/licenses/LICENSE-2.0
                redirectPort="8443"
                proxyName="shipmee.es"
                proxyPort="443"
+               maxPostSize="105906176"
                scheme="https"
                 />
     <!-- A "Connector" using the shared thread pool-->
