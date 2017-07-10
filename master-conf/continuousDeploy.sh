@@ -31,6 +31,8 @@ cp -r $REPO_PATH/$ENV_NAME-develop/* $COMPILE_FOLDER
 
 cd $COMPILE_FOLDER
 
+sed -i".bak" -e '/.*<!-- EN\ COSNTRUC.*/, +4 d' src/main/webapp/views/master-page/header.jsp
+
 docker run --rm \
     -v $COMPILE_FOLDER:/root \
     -v "$PATH_ROOT/war_generation/.m2":/root/.m2 \
